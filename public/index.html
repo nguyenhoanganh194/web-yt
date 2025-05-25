@@ -1,89 +1,351 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<!-- saved from url=(0043)https://yt-fun-aracde-game-website.web.app/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Google Tag Manager -->
+<script async="" src="./Acrade - Gaming Studio_files/gtm.js.download"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MF6BQ3PN');</script>
+    <!-- End Google Tag Manager -->
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Acrade - Gaming Studio</title>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/11.8.1/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/11.8.1/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/11.8.1/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/11.8.1/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/11.8.1/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/11.8.1/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/11.8.1/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/11.8.1/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/11.8.1/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/11.8.1/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <link rel="shortcut icon" href="https://yt-fun-aracde-game-website.web.app/assets/images/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="./Acrade - Gaming Studio_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./Acrade - Gaming Studio_files/fontawesome.min.css">
+    <link rel="stylesheet" href="./Acrade - Gaming Studio_files/jquery-ui.css">
+    <link rel="stylesheet" href="./Acrade - Gaming Studio_files/magnific-popup.css">
+    <link rel="stylesheet" href="./Acrade - Gaming Studio_files/slick.css">
+    <link rel="stylesheet" href="./Acrade - Gaming Studio_files/arafat-font.css">
+    <link rel="stylesheet" href="./Acrade - Gaming Studio_files/animate.css">
+    <link rel="stylesheet" href="./Acrade - Gaming Studio_files/style.css">
+</head>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MF6BQ3PN"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- start preloader -->
+    <div class="preloader" id="preloader" style="opacity: 0; display: none;"></div>
+    <!-- end preloader -->
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <!-- Scroll To Top Start-->
+    <a href="javascript:void(0)" class="scrollToTop"><i class="fas fa-angle-double-up"></i></a>
+    <!-- Scroll To Top End -->
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
-</html>
+    <!-- header-section start -->
+    <header class="header-section">
+        <div class="overlay">
+            <div class="container">
+                <div class="row d-flex header-area">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="https://yt-fun-aracde-game-website.web.app/index.html">
+                            <img src="./Acrade - Gaming Studio_files/logo.png" class="logo" alt="logo">
+                        </a>
+                        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbar-content">
+                            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="https://yt-fun-aracde-game-website.web.app/index-dark.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://yt-fun-aracde-game-website.web.app/#games">Games</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://yt-fun-aracde-game-website.web.app/#about-us">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://yt-fun-aracde-game-website.web.app/#team">Team</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://yt-fun-aracde-game-website.web.app/#contact">Game Idea and Feedback</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://yt-fun-aracde-game-website.web.app/privacy.html">Privacy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-section end -->
+
+    <!-- Banner Section start -->
+    <section class="banner-section index">
+        <div class="overlay">
+            <div class="banner-content">
+                <div class="container wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-xl-7 col-lg-6 col-md-8">
+                            <div class="main-content">
+                                <div class="top-area section-text">
+                                    <h5 class="sub-title">Welcome to Acrade Game Studios</h5>
+                                    <h1 class="title">A New Level of Fun And Free Games</h1>
+                                    <p class="xlr">We create relaxing and exciting games for everyone. Our goal is to entertain people from all over the world with our games</p>
+                                    <div class="btn-area mt-30">
+                                        <a href="https://yt-fun-aracde-game-website.web.app/#games" class="cmn-btn">
+                                            <i class="icon-b-right-arrow"></i>
+                                            Explore
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-lg-6 col-md-8">
+                            <div class="sec-img">
+                                <img src="./Acrade - Gaming Studio_files/index-illus.png" class="max-un" alt="image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner Section end -->
+
+    <!-- Game Slider start -->
+    
+    <section class="game-slider" id="games">
+        <div class="overlay pt-120 pb-120">
+            <div class="container">
+                <div class="row wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                    <h2 class="title">Our Top game:</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Game Slider end -->
+
+    <!-- About US start -->
+    <section class="about-us" id="about-us">
+        <div class="overlay pt-120 pb-120">
+            <div class="container wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="section-header text-center">
+                            <h5 class="sub-title">Imagine, Design , Build</h5>
+                            <h2 class="title">We are now creating more and more game for players around the globe</h2>
+                            <p>Our Games aim for global accessment, for every age, for everyone.Thus, Our team work hard everyday to improve it.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="magnific-area position-relative d-flex align-items-center justify-content-around">
+                            <div class="bg-area">
+                                <img class="bg-item" src="./Acrade - Gaming Studio_files/video-bg.png" alt="image">
+                            </div>
+                            <div class="content-area position-absolute d-flex align-items-center justify-content-center">
+                                <div class="content-box">
+                                    <a class="mfp-iframe popupvideo d-flex align-items-center justify-content-center" href="https://www.youtube.com/watch?v=Djz8Nc0Qxwk">
+                                        <img src="./Acrade - Gaming Studio_files/play-icon.png" alt="icon">
+                                    </a>
+                                    <h2>Welcome to GameAcrade</h2>
+                                    <p>Building games for everyone</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About US end -->
+
+    <!-- Counter start -->
+    <section class="counter-section">
+        <div class="overlay pb-120">
+            <div class="container wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-6">
+                        <div class="section-area">
+                            <h5 class="sub-title">GameAcrade in Numbers</h5>
+                            <h2 class="title">A Young &amp; Growing Game Studio</h2>
+                            <p>We have a passion in creating new games!. Our team also modify and update our games to make player's experiences BEST.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row cus-mar">
+                            <div class="col-sm-6 mt-60">
+                                <div class="single-box">
+                                    <h1><span class="counter">5</span>+</h1>
+                                    <p>Games launched</p>
+                                </div>
+                                <div class="single-box second">
+                                    <h1><span class="counter">500</span>+</h1>
+                                    <p>Monthly active users</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="single-box third">
+                                    <h1><span class="counter">3000</span>+</h1>
+                                    <p>Downloads</p>
+                                </div>
+                                <div class="single-box fourth">
+                                    <h1><span class="counter">50</span>+</h1>
+                                    <p>Country</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Counter end -->
+
+    <!-- Gallery slider start -->
+    
+    <!-- Gallery slider end -->
+
+    <!-- Contact Us start -->
+    <section class="contact-us" id="contact">
+        <div class="overlay">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xxl-4 col-xl-5">
+                        <div class="section-header text-center">
+                            <h5 class="sub-title">We’re Listening!</h5>
+                            <h2 class="title">Ready to make your ideas become true?</h2>
+                            <p>Stay in touch with us. Send us an email or start a conversation by filling the form below, express your ideas for us to craft unforgettable games for players</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-between">
+                    <div class="col-lg-5">
+                        <div class="section-text">
+                            <h4>Reach us directly!</h4>
+                        </div>
+                        <div class="single-box">
+                            <div class="icon-area">
+                                <img src="./Acrade - Gaming Studio_files/email.png" alt="icon">
+                            </div>
+                            <div class="text-area">
+                                <h5>Email</h5>
+                                <p>02ytstudio@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="single-box">
+                            <div class="icon-area">
+                                <img src="./Acrade - Gaming Studio_files/phone.png" alt="icon">
+                            </div>
+                            <div class="text-area">
+                                <h5>Phone</h5>
+                                <p>+84 889021362</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-lg-6">
+                        <form action="https://yt-fun-aracde-game-website.web.app/#">
+                            <div class="col-12">
+                                <div class="single-input">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" placeholder="Enter your name" autocomplete="off">
+                                </div>
+                                <div class="single-input">
+                                    <label for="email">Email</label>
+                                    <input type="text" id="email" placeholder="Enter your email" autocomplete="off">
+                                </div>
+                                <div class="single-input">
+                                    <label for="subject">Subject</label>
+                                    <input type="text" id="subject" placeholder="Enter your subject" autocomplete="off">
+                                </div>
+                                <div class="single-input">
+                                    <label for="message">Leave us a message</label>
+                                    <textarea cols="30" id="message" rows="4" placeholder="Please type your message here..."></textarea>
+                                </div>
+                                <div class="btn-area text-center">
+                                    <button>Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Us end -->
+
+    <!-- Footer Area Start -->
+    <footer class="footer-section">
+        <div class="container pt-120">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="footer-form">
+                        <div class="section-area mb-30 text-center">
+                            <h4 class="title">To Get Update New Games!</h4>
+                            <p>Subscribe to get updated on future game releases</p>
+                        </div>
+                        <form action="https://yt-fun-aracde-game-website.web.app/#">
+                            <div class="form-group input-area d-flex align-items-center">
+                                <input type="text" placeholder="Enter your email" autocomplete="off">
+                                <button class="btn-area"><img src="./Acrade - Gaming Studio_files/send-icon.png" alt="icon"></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-area pt-120">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="footer-top d-flex align-items-center justify-content-between">
+                            <a href="https://yt-fun-aracde-game-website.web.app/index-light.html">
+                                <img src="./Acrade - Gaming Studio_files/logo-dark.png" class="logo" alt="logo">
+                            </a>
+                            <div class="footer-box">
+                                <ul class="footer-link d-flex align-items-center gap-4">
+                                    <li><a href="https://yt-fun-aracde-game-website.web.app/#games">Game</a></li>
+                                    <li><a href="https://yt-fun-aracde-game-website.web.app/#about-us">About Us</a></li>
+                                    <li><a href="https://yt-fun-aracde-game-website.web.app/#contact">Game Idea and Feedback</a></li>
+                                    <li><a href="https://yt-fun-aracde-game-website.web.app/privacy.html">Privacy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-lg-8 d-flex justify-content-center justify-content-lg-start order-lg-0 order-1">
+                            <div class="copyright">
+                                <p>Copyright © 2022 <a href="https://yt-fun-aracde-game-website.web.app/#">AcradeGame</a>. All rights reserved. Design by <a href="https://themeforest.net/user/pixelaxis">PIXELAXIS</a></p>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 d-flex justify-content-center justify-content-lg-end">
+                            <div class="social">
+                                <ul class="footer-link gap-2 d-flex align-items-center">
+                                    <li><a href="https://play.google.com/store/apps/details?id=com.excited_animal_rescue.ytufunaracde"><i class="fab fa-google-play"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End -->
+
+    <!--==================================================================-->
+    <iframe height="0" width="0" style="display: none; visibility: hidden;" src="./Acrade - Gaming Studio_files/saved_resource.html"></iframe><script data-cfasync="false" src="./Acrade - Gaming Studio_files/email-decode.min.js.download"></script><script src="./Acrade - Gaming Studio_files/jquery.min.js.download"></script>
+    <script src="./Acrade - Gaming Studio_files/jquery-ui.js.download"></script>
+    <script src="./Acrade - Gaming Studio_files/bootstrap.min.js.download"></script>
+    <script src="./Acrade - Gaming Studio_files/fontawesome.js.download"></script>
+    <script src="./Acrade - Gaming Studio_files/slick.js.download"></script>
+    <script src="./Acrade - Gaming Studio_files/counter.js.download"></script>
+    <script src="./Acrade - Gaming Studio_files/waypoint.min.js.download"></script>
+    <script src="./Acrade - Gaming Studio_files/jquery.magnific-popup.min.js.download"></script>
+    <script src="./Acrade - Gaming Studio_files/wow.min.js.download"></script>
+    <script src="./Acrade - Gaming Studio_files/plugin.js.download"></script>
+    <script src="./Acrade - Gaming Studio_files/main.js.download"></script>
+
+
+</body></html>
